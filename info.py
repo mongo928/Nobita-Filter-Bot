@@ -16,10 +16,9 @@ SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '##########'))
 API_HASH = environ.get('API_HASH', '##########')
 BOT_TOKEN = environ.get('BOT_TOKEN', "##########")
-TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 
-CACHE_TIME = int(environ.get('CACHE_TIME', 150))
-USE_CAPTION_FILTER = is_enabled((environ.get('USE_CAPTION_FILTER', 'True')), True)
+CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://graph.org/file/37b2bc22dfce99693227f.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/37b2bc22dfce99693227f.jpg")
