@@ -71,7 +71,7 @@ async def give_filter(client, message):
                 parse_mode=enums.ParseMode.HTML,
                 reply_markup=InlineKeyboardMarkup(
                         [[
-                            InlineKeyboardButton('✧ ᴛᴀᴋᴇ ᴍᴏᴠɪᴇ ꜰʀᴏᴍ ʜᴇʀᴇ ✧', url ='https://telegram.me/AllRequestGroups')
+                            InlineKeyboardButton('✧ ᴛᴀᴋᴇ ᴍᴏᴠɪᴇ ꜰʀᴏᴍ ʜᴇʀᴇ ✧', url ='https://t.me/thewarriorsreal')
                         ]]
                     )
                 )
@@ -85,7 +85,7 @@ async def pm_text(bot, message):
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
          text="<b>ʜʏ,\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴏᴠɪᴇs / sᴇʀɪᴇs ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ꜰɪʀsᴛ ʙᴜᴛᴛᴏɴ ᴏʀ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ɪɴ ʙᴏᴛ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ sᴇᴄᴏɴᴅ ʙᴜᴛᴛᴏɴ</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝  ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ​ ", url=f"https://telegram.me/AllRequestGroups")]]), disable_web_page_preview=True
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝  ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ​ ", url=f"https://t.me/thewarriorsreal")]]), disable_web_page_preview=True
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -225,7 +225,7 @@ async def next_page(bot, query):
             InlineKeyboardButton("⚜️  ᴛɪᴘꜱ", callback_data="sinfo")
         ])
     btn.insert(0, [
-        InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
+        InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ ​ ⛔️", url="https://t.me/thewarriorsreal")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -401,7 +401,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
         ])
     btn.insert(0, [
-        InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
+        InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ ​ ⛔️", url="https://t.me/thewarriorsreal")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -684,7 +684,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                              [
-                          InlineKeyboardButton("❤️‍🔥 ᴄʜᴀɴɴᴇʟ​ ❤️‍🔥", url="https://telegram.me/AllRequestGroups")
+                          InlineKeyboardButton("❤️‍🔥 ᴄʜᴀɴɴᴇʟ​ ❤️‍🔥", url="https://t.me/thewarriorsreal")
                              ]
                             ]
                         )
@@ -729,7 +729,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton("❤️‍🔥 ᴄʜᴀɴɴᴇʟ​ ❤️‍🔥", url="https://telegram.dog/AllRequestGroups")
+                  InlineKeyboardButton("❤️‍🔥 ᴄʜᴀɴɴᴇʟ​ ❤️‍🔥", url="https://t.me/thewarriorsreal")
                  ]
                 ]
             )
@@ -1031,7 +1031,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://telegram.me/AllRequestGroups")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/thewarriorsreal")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1056,7 +1056,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://telegram.me/AllRequestGroups")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/thewarriorsreal")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1148,13 +1148,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "buy_premium":
         btn = [
             [InlineKeyboardButton("🤫 ɢᴇᴛ ꜰʀᴇᴇ ᴛʀɪᴀʟ 🤫", callback_data="get_trail")],
-            [InlineKeyboardButton("✅sᴇɴᴅ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ ʜᴇʀᴇ✅", url="https://telegram.me/NobiDeveloperr")],
+            [InlineKeyboardButton("✅sᴇɴᴅ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ ʜᴇʀᴇ✅", url="https://t.me/thewarriorsreal")],
             [InlineKeyboardButton("⚠️ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ⚠️", callback_data="close_data")]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.reply_photo(
-            photo="https://graph.org/file/0808151333b48249ccbf7.jpg",
-            caption="**⚡️Buy Premium Now\n\n ╭━━━━━━━━╮\n    Premium Plans\n  • ₹10 - 1 day (Trial)\n  • ₹25 - 1 Week (Trial)\n  • ₹50 - 1 Month\n  • ₹120 - 3 Months\n  • ₹220 - 6 Months\n  • ₹400 - 1 Year\n╰━━━━━━━━╯\n\nPremium Features ♤ᵀ&ᶜ\n\n☆ New/Old Movies and Series\n☆ High Quality available\n☆ Get Files Directly \n☆ High speed Download links\n☆ Full Admin support \n☆ Request will be completed in 1 hour if available.\n\nᴜᴘɪ ɪᴅ ➢ <code>NobiDeveloper@sbi</code>\n\n⚠️Send SS After Payment⚠️\n\n~ After sending a Screenshot please give us some time to add you in the premium version.**",
+            photo="https://graph.org/file/37b2bc22dfce99693227f.jpg",
+            caption="https://t.me/thewarriorsreal",
             reply_markup=reply_markup
         )
         return
@@ -1215,13 +1215,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "group_info":
         buttons = [[
-            InlineKeyboardButton('ꜱᴜʙꜱᴄʀɪʙᴇ  ᴍʏ  ʏᴛ  ᴄʜᴀɴɴᴇʟ', url="https://youtube.com/@NobiDeveloper"),
+            InlineKeyboardButton('ꜱᴜʙꜱᴄʀɪʙᴇ  ᴍʏ  ʏᴛ  ᴄʜᴀɴɴᴇʟ', url="https://t.me/thewarriorsreal"),
         ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url="https://telegram.me/AllRequestGroups"),
-            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="https://telegram.me/NobiDeveloper")
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url="https://t.me/thewarriorsreal"),
+            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="https://t.me/thewarriorsreal")
         ],[
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url="https://telegram.me/NobiDeveloperSupport"),
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url="https://telegram.me/MovieVillaYT")
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url="https://t.me/thewarriorsreal"),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url="https://t.me/thewarriorsreal")
         ],[
             InlineKeyboardButton('ʙᴀᴄᴋ​', callback_data='start')
         ]]
@@ -1242,9 +1242,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ꜱᴛᴀᴛᴜꜱ', callback_data='stats'),
             InlineKeyboardButton('ᴅɪꜱᴄʟᴀɪᴍᴇʀ', callback_data='source')
         ],[
-            InlineKeyboardButton('ꜱᴜʙꜱᴄʀɪʙᴇ  ᴍʏ  ʏᴛ  ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@NobiDeveloper')
+            InlineKeyboardButton('ꜱᴜʙꜱᴄʀɪʙᴇ  ᴍʏ  ʏᴛ  ᴄʜᴀɴɴᴇʟ', url='https://t.me/thewarriorsreal')
         ],[
-            InlineKeyboardButton('ʀᴇᴘᴏʀᴛ  ʙᴜɢꜱ  ᴀɴᴅ  ꜰᴇᴇᴅʙᴀᴄᴋ', url='https://telegram.me/NobiDeveloperSupport')
+            InlineKeyboardButton('ʀᴇᴘᴏʀᴛ  ʙᴜɢꜱ  ᴀɴᴅ  ꜰᴇᴇᴅʙᴀᴄᴋ', url='https://t.me/thewarriorsreal')
         ],[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
@@ -1292,10 +1292,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "button":
         buttons = [[
-                    InlineKeyboardButton("💶    ᴘʟᴇᴀsᴇ  ᴅᴏɴᴀᴛᴇ    💶", url="https://telegra.ph/SUPPORT-12-22-2")
+                    InlineKeyboardButton("💶    ᴘʟᴇᴀsᴇ  ᴅᴏɴᴀᴛᴇ    💶", url="https://t.me/thewarriorsreal")
                  ],[
                     InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ", url="https://telegram.me/Nobideveloperr")
+                    InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ", url="https://t.me/thewarriorsreal")
                   ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1435,7 +1435,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "shortlink_info":
             btn = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ʜᴇʟᴘ', url='https://telegram.me/NobiDeveloperSupport')
+            InlineKeyboardButton('ʜᴇʟᴘ', url='https://t.me/thewarriorsreal')
             ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -1570,7 +1570,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
-        m=await message.reply_sticker("CAACAgIAAxkBAAIXXWRwvVZPxlLGkm2xcdXPvStNnFG6AAJxCAAChJRBSW9oCRqmu85zHgQ")
+        m=await message.reply_sticker("CAACAgQAAxkBAAEgCwhl202Wul4M3XBOaGeo4tamseXkDwACoBEAAqbxcR5O5UHja6tzTB4E")
         settings = await get_settings(message.chat.id)
     if 'is_shortlink' in settings.keys():
         ENABLE_SHORTLINK = settings['is_shortlink']
@@ -1641,7 +1641,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="🔘 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🔘",callback_data="pages")]
         )
     btn.insert(0, [
-        InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ  ⛔️", url="https://youtube.com/@NobiDeveloper")
+        InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ  ⛔️", url="https://t.me/thewarriorsreal")
     ])
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     now = datetime.now(tz)
@@ -1682,7 +1682,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>┏🎪 ᴛɪᴛɪʟᴇ :  {search}\n┣🤴 ᴀsᴋᴇᴅ ʙʏ : {message.from_user.mention}\n┣⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://telegram.me/NobiDeveloper'>​ꜱʜɪᴢᴜᴋᴀ</a>\n┗🍁 ᴄʜᴀɴɴᴇʟ : <a href='https://telegram.me/MovieVillaYT'>ᴍᴏᴠɪᴇᴠɪʟʟᴀ​​</a>\n\n⚠️  ᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ  🗑️\n\n❇️ ʙʏ : {message.chat.title}</b>"
+        cap = f"<b>┏🎪 ᴛɪᴛɪʟᴇ :  {search}\n┣🤴 ᴀsᴋᴇᴅ ʙʏ : {message.from_user.mention}\n┣⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/thewarriorsreal'>​thewarriorsreal</a>\n┗🍁 ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/thewarriorsreal'>ᴍᴏᴠɪᴇᴠɪʟʟᴀ​​</a>\n\n⚠️  ᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ  🗑️\n\n❇️ ʙʏ : {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
